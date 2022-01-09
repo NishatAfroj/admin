@@ -2,9 +2,11 @@
 <html lang="en">
 
   <head>
+    
+    
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
     <title>"BabyBlossom-contact us"</title>
     <meta name="keywords" content="baby, babyshopping, BAbyBlossom, Baby, Blossom, Diaper, Wipes ">
     <meta name="designer" content= "MAJ NISHAT AFROJ">
@@ -37,7 +39,21 @@
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
   </head>
-  
+<script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyAuWgrW33JFMv7oMt49_uYksoxHEzc8tmQ",
+  authDomain: "babyblossom-68ad9.firebaseapp.com",
+  databaseURL: "https://babyblossom-68ad9-default-rtdb.firebaseio.com",
+  projectId: "babyblossom-68ad9",
+  storageBucket: "babyblossom-68ad9.appspot.com",
+  messagingSenderId: "747889170833",
+  appId: "1:747889170833:web:825000a5091552ddf8a230",
+  measurementId: "G-NJBEZVPLRD"
+ };
+ firebase.initializeApp(firebaseConfig); 
+
+</script>
+
   <body>
     <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -164,27 +180,12 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+            <div>
+              <iframe height="500"width="800" src="comment.html"></iframe>
+            </div>
+            
+          </div >
+          
             </form>
 
           </div>
@@ -282,7 +283,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+ 
 </body>
 
 </html>

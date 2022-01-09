@@ -181,3 +181,24 @@
   }
 
 })()
+function shownew() {
+
+  var name = document.getElementById("name").value;
+  var email= document.getElementById("email").value;
+  var message= document.getElementById("message").value;
+
+
+   firebase.database().ref('User/' + message).set({
+          name : name,
+          message : message,
+          email : email
+        }, function(error) {
+          if (error) {
+            // The write failed...
+          } else {
+              alert("Your message has been sent. Thank you!");
+            
+         
+          }
+        });
+} 
